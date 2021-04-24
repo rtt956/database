@@ -41,7 +41,7 @@ create table player(
    height float(0),
    weight float(0),
    games int
-);
+)
 create table trainer(
    emp_id varchar(30) primary key
 );
@@ -49,12 +49,8 @@ create table coach(
    emp_id varchar(30) primary key,
    position varchar(30)
 );
-create table batter(
-   batter_id varchar(30) primary key,
-   foreign key(emp_id) references player(emp_id)
-   runs int
-   hits int 
-   home_runs int
-   runners_batted_in int
-   strike_outs int
+create table agent(
+   agent_id varchar(30) primary key,
+   aname varchar(30),
+   city varchar(30)
 );
