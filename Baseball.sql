@@ -16,7 +16,7 @@ create table contract(
    foreign key(emp_id) references employee(emp_id),
    date_start date,
    date_finish date,
-   salary float
+   salary FLOAT
 );
 create table game(
    game_num varchar(30),
@@ -35,3 +35,7 @@ create table league(
    league_id varchar(30) primary key,
    league_name varchar(30) not null,
 );
+create table player(
+   player_id varchar(30) primary key,
+   height FLOAT
+)
