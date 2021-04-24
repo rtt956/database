@@ -36,8 +36,16 @@ create table league(
    league_name varchar(30) not null,
 );
 create table player(
+   emp_id varchar(30),
    player_id varchar(30) primary key,
    height float(0),
    weight float(0),
    games int
 )
+create table trainer(
+   emp_id varchar(30) primary key
+);
+create table coach(
+   emp_id varchar(30) primary key,
+   position varchar(30)
+);
