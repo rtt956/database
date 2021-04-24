@@ -16,7 +16,7 @@ create table contract(
    foreign key(emp_id) references employee(emp_id),
    date_start date,
    date_finish date,
-   salary float(0)
+   salary float(24)
 );
 create table game(
    game_num varchar(30),
