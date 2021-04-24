@@ -41,7 +41,7 @@ create table player(
    height float(0),
    weight float(0),
    games int
-)
+);
 create table trainer(
    emp_id varchar(30) primary key
 );
