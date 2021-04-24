@@ -23,8 +23,8 @@ create table game(
    foreign key(team_id) references team(team_id),
    primary key(game_num,team_id),
    score int,
-   date date,
-   time int
+   game_date date,
+   game_time int
 );
 create table park(
    park_id varchar(30) primary key,
