@@ -38,8 +38,8 @@ create table league(
 create table player(
    emp_id varchar(30),
    player_id varchar(30) primary key,
-   height float(0),
-   weight float(0),
+   height int,
+   weight int,
    games int
 );
 create table trainer(
