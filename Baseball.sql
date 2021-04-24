@@ -7,6 +7,7 @@ create table team(
 create table employee(
    emp_id varchar(30) primary key,
    foreign key(team_id) references team(team_id),
+   foreing key(contract_id) references contract(contract_id),
    fname varchar(30),
    lname varchar(30),
    reports_to varchar(30)
@@ -36,8 +37,8 @@ create table league(
    league_name varchar(30) not null,
 );
 create table player(
-   emp_id varchar(30),
-   player_id varchar(30) primary key,
+   emp_id varchar(30) primary key,
+   foreign key(agent_id) references agent(agent_id)
    height int,
    weight int,
    games int
