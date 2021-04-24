@@ -71,7 +71,7 @@ create table batter(
    hits int,
    home_runs int,
    runners_batted_in int,
-   strike_outs int,
+   strike_outs int
 );
 create table trainer_skill(
    emp_id varchar(30),
