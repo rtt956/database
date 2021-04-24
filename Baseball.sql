@@ -54,3 +54,13 @@ create table agent(
    aname varchar(30),
    city varchar(30)
 );
+create table pitcher(
+   pitcher_id varchar(30) primary key,
+   foreign key(emp_id) references player(emp_id),
+   inning_pitched double,
+   hits_allowed int,
+   runs_allowed int,
+   home_runs_allowed int,
+   strike_outs int,
+   batters_faced int
+);
