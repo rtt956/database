@@ -64,3 +64,22 @@ create table pitcher(
    strike_outs int,
    batters_faced int
 );
+create table batter(
+   batter_id varchar(30) primary key,
+   foreign key(emp_id) references player(emp_id),
+   runs int,
+   hits int,
+   home_runs int,
+   runners_batted_in int,
+   strike_outs int,
+);
+create table trainer_skill(
+   emp_id varchar(30),
+   skill_t varchar(30),
+   primarykey(emp_id,skill_t)
+);
+create tbale skill_t(
+   skill_t varchar(30) primary key,
+   skill_type varchar(30),
+   skill_description varchar(50)
+);
