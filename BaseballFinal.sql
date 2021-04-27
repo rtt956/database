@@ -18,7 +18,7 @@ create table team(
 );
 
 #Team Data
-INSERT INTO Team (`team_id`,`league_id`,`team_name`,`wins`,`losses`) VALUES 
+INSERT INTO team (`team_id`,`league_id`,`team_name`,`wins`,`losses`) VALUES 
 (36101,1,"Tellus Inc.",5,9),
 (36102,1,"Donec Nibh Quisque Incorporated",9,14),
 (36103,1,"Malesuada Id Erat Corp.",3,22),
