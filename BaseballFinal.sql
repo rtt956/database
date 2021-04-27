@@ -85,7 +85,7 @@ create table skill_t(
    skill_type varchar(30),
    skill_description varchar(50)
 );
-create table trainer_skil(
+create table trainer_skill(
    emp_id varchar(30),
    skill_t varchar(30),
    primary key(emp_id,skill_t)
