@@ -135,7 +135,7 @@ where wins > losses;
 select employee.lname as "Last Name", employee.fname as "First Name"
 from player
 join employee on employee.emp_id = player.emp_id
-where employee.team_id = 
+where employee.team_id = 36113
 order by employee.lname;
 
 select team.team_name as "Team Name", avg(batter.runs) as "Average Runs"
