@@ -1,5 +1,6 @@
 create table team(
    team_id varchar(30) primary key,
+   foreign key(league_id) references league(league_id),
    team_name varchar(30),
    wins int,
    losses int
