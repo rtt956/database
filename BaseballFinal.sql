@@ -31,6 +31,8 @@ create table game(
 );
 create table park(
    park_id varchar(30) primary key,
+   team_id varchar(30),
+   foreign key(team_id) references team(team_id),
    city varchar(30) not null,
    state varchar(30) not null,
    park_name varchar(30) not null
