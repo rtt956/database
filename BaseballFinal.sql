@@ -2,7 +2,6 @@ create table league(
    league_id varchar(30) primary key,
    league_name varchar(30) not null
 );
-
 #league data
 INSERT INTO league(`league_id`,`league_name`)VALUES
 (1,"American League"),
@@ -16,7 +15,6 @@ create table team(
    wins int,
    losses int
 );
-
 #Team Data
 INSERT INTO team (`team_id`,`league_id`,`team_name`,`wins`,`losses`) VALUES 
 (36101,1,"Tellus Inc.",5,9),
@@ -49,13 +47,13 @@ INSERT INTO team (`team_id`,`league_id`,`team_name`,`wins`,`losses`) VALUES
 (36128,2,"Mi Lorem Vehicula LLP",19,20),
 (36129,2,"Cursus In LLC",7,29),
 (36130,2,"Fames Ac Consulting",11,21);
+
 create table contract(
    contract_id varchar(30) primary key,
    date_start date,
    date_finish date,
    salary float(24)
 );
-
 #Contract data
 INSERT INTO contract (`contract_id`,`date_start`,`date_finish`,`salary`) VALUES 
 (1,"2010-10-13 23:53:25","2021-07-30 23:08:47","$472.71"),
@@ -119,6 +117,7 @@ create table employee(
    lname varchar(30),
    reports_to varchar(30)
 );
+
 create table game(
    game_num varchar(30),
    team_id varchar(30),
@@ -128,7 +127,6 @@ create table game(
    game_date date,
    game_time int
 );
-
 #Game data
 INSERT INTO game (`game_num`,`team_id`,`score`,`game_date`,`game_time`) VALUES 
 (1,36101,0,"2022-06-29 03:49:41",13),
@@ -156,7 +154,38 @@ create table park(
    state varchar(30) not null,
    park_name varchar(30) not null
 );
-
+#Park data
+INSERT INTO park (`park_id`,`team_id`,`city`,`state`,`park_name`) VALUES 
+(1,36101,"Montgomery","AL","massa"),
+(2,36102,"Meridian","ID","luctus"),
+(3,36103,"Augusta","GA","eget,"),
+(4,36104,"Annapolis","MD","ornare"),
+(5,36105,"Olathe","KS","et"),
+(6,36106,"Chesapeake","VA","lacinia"),
+(7,36107,"Sterling Heights","MI","tempus"),
+(8,36108,"Helena","MT","semper"),
+(9,36109,"Casper","WY","Aenean"),
+(10,36110,"Virginia Beach","VA","tellus."),
+(11,36111,"Rutland","VT","vel"),
+(12,36112,"Sacramento","CA","Suspendisse"),
+(13,36113,"Knoxville","TN","Quisque"),
+(14,36114,"Tucson","AZ","iaculis"),
+(15,36115,"Lakewood","CO","dui."),
+(16,36116,"Toledo","OH","enim"),
+(17,36117,"Miami","FL","sociis"),
+(18,36118,"South Bend","IN","risus"),
+(19,36119,"Hilo","HI","laoreet"),
+(20,36120,"Broken Arrow","OK","mauris"),
+(21,36121,"Gaithersburg","MD","nunc"),
+(22,36122,"South Burlington","VT","venenatis"),
+(23,36123,"Ketchikan","AK","Praesent"),
+(24,36124,"Mobile","AL","malesuada"),
+(25,36125,"Norfolk","VA","est"),
+(26,36126,"Madison","WI","dis"),
+(27,36127,"Anchorage","AK","Pellentesque"),
+(28,36128,"South Bend","IN","non"),
+(29,36129,"Hattiesburg","MS","vitae"),
+(30,36130,"Kenosha","WI","ante.");
 
 create table agent(
    agent_id varchar(30) primary key,
