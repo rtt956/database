@@ -1,3 +1,13 @@
+create table league(
+   league_id varchar(30) primary key,
+   league_name varchar(30) not null
+);
+
+#league data
+INSERT INTO league(`league_id`,`league_name`)VALUES
+(1,"American League"),
+(2,"National League");
+
 create table team(
    team_id varchar(30) primary key,
    league_id varchar(30),
@@ -70,10 +80,7 @@ create table park(
    state varchar(30) not null,
    park_name varchar(30) not null
 );
-create table league(
-   league_id varchar(30) primary key,
-   league_name varchar(30) not null
-);
+
 
 create table agent(
    agent_id varchar(30) primary key,
