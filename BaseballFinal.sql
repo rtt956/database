@@ -91,3 +91,8 @@ create table trainer_skill(
    skill_t varchar(30),
    primary key(emp_id,skill_t)
 );
+
+// Queries //
+select *
+from team
+where wins > losses;
