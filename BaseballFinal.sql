@@ -32,7 +32,8 @@ create table game(
 create table park(
    park_id varchar(30) primary key,
    city varchar(30) not null,
-   state varchar(30) not null
+   state varchar(30) not null,
+   park_name varchar(30) not null
 );
 create table league(
    league_id varchar(30) primary key,
