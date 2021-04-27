@@ -98,3 +98,9 @@ create table trainer_skill(
 select *
 from team
 where wins > losses;
+
+select employee.lname as "Last Name", employee.fname as "First Name"
+from player
+join employee on employee.emp_id = player.emp_id
+where employee.team_id = 
+order by employee.lname;
