@@ -135,3 +135,11 @@ from player
 join employee on employee.emp_id = player.emp_id
 where employee.team_id = 
 order by employee.lname;
+
+select team.team_name as "Team Name", avg(batter.runs) as "Average Runs"
+from batter
+join player on player.player_id = batter.player_id
+join employee on employee.emp_id = player.emp_id
+join team on team.team_id = employee.team_id
+group by team.team_id
+order by team.team_id;
